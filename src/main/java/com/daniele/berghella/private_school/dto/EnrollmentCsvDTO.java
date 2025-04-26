@@ -9,9 +9,11 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class EnrollmentDTO {
+public class EnrollmentCsvDTO {
     private Long id;
     private Long studentId;
+    private String studentLastName;
     private Long courseId;
+    private String courseTitle;
     private String enrollmentDate;
 }

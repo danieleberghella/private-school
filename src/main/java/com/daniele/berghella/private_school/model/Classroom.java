@@ -7,7 +7,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
@@ -25,4 +26,9 @@ public class Classroom {
 
     @OneToMany(mappedBy = "classroom", cascade = CascadeType.ALL)
     private Set<Schedule> schedules = new HashSet<>();
+
+    public Classroom(String name, int capacity) {
+        this.name = name;
+        this.capacity = capacity;
+    }
 }

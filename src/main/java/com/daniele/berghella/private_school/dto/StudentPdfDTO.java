@@ -1,17 +1,19 @@
 package com.daniele.berghella.private_school.dto;
 
 import lombok.AllArgsConstructor;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Getter;
 import lombok.Setter;
+
+import java.util.List;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class EnrollmentDTO {
-    private Long id;
-    private Long studentId;
-    private Long courseId;
-    private String enrollmentDate;
+public class StudentPdfDTO {
+    private String firstName;
+    private String lastName;
+    private String email;
+    private List<String> courseNames;
 }

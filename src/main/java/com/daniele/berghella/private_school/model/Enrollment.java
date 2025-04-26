@@ -4,7 +4,8 @@ import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
@@ -19,6 +20,7 @@ public class Enrollment {
 
     @ManyToOne
     private Course course;
+
 
     private String enrollmentDate;
 }

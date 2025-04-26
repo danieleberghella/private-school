@@ -9,8 +9,13 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserDTO {
-    private Long id;
+public class SignupRequestDTO {
     private String username;
+    private String password;
     private String role;
+
+    public SignupRequestDTO(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
 }
